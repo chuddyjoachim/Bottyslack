@@ -2,7 +2,7 @@ import "dotenv/config";
 import http from "http";
 import app from "./app";
 
-const App_Port = process.env.App_Port || 3000;
+const App_Port = process.env.PORT || 3000;
 const http_ = new http.Server(app);
 
 http_.listen(App_Port, () => {
